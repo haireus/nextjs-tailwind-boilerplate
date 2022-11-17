@@ -1,0 +1,57 @@
+.checkbox {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.knobs {
+  z-index: 2;
+}
+
+.knobs:before,
+.no,
+.knobs span {
+  position: absolute;
+  top: 1px;
+  width: 20px;
+  height: 20px;
+  padding: 9px 4px;
+  border-radius: 50%;
+  transition: 0.3s ease all;
+}
+.knobs:before {
+  content: "";
+  width: 28px;
+  height: 28px;
+  left: 4px;
+  top: 4px;
+  background: linear-gradient(143.77deg, #ff8b00 30.41%, #fd3547 128.15%);
+  box-shadow: 0px 1px 0px #da5022, 0px 3px 5px rgba(0, 0, 0, 0.13),
+    0px 4px 10px rgba(253, 53, 71, 0.38);
+  border-radius: 16px;
+}
+
+.no {
+  right: 9px;
+  color: #4e4e4e;
+}
+
+.knobs span {
+  display: inline-block;
+  left: 5px;
+  color: #fff;
+  z-index: 1;
+}
+
+.checkbox:checked + .knobs:before {
+  left: 36px;
+}
+
+.checkbox:checked + no > svg > path {
+  fill: black;
+}

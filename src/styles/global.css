@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "Montserrat", sans-serif;
+  }
+
+  .dark {
+    color: #ffff;
+
+    --color-general-primary: #23406b;
+    --color-general-secondary: #23406b99; /* general-primary-[0.6]  */
+    --color-general-light: #ffffff1f; /* white-[0.12]  */
+    --color-general-background: rgba(7, 17, 31, 0.97);
+    --color-general-bglight: rgba(255, 255, 255, 0.06);
+    --color-general-bgdark: #101c2f;
+    --color-general-border: rgba(255, 255, 255, 0.1);
+
+    --color-secondary: #07111fe0; /* #07111F-[0.88]  */
+
+    --color-accent-green: #00e917;
+    --color-accent-red: #ff574d;
+    --color-accent-orange: #f78701;
+
+    --color-icon-primary: #fff;
+
+    --color-text-primary: #ffffff99;
+
+    --color-base: black;
+  }
+
+  .light {
+    color: #23406b;
+
+    --color-general-primary: #ffffff;
+    --color-general-secondary: #ffffff99; /* general-primary-[0.6]  */
+    --color-general-light: #23406b14; /* general-primay-[0.08]  */
+    --color-general-background: rgba(255, 255, 255, 0.97);
+    --color-general-border: rgba(35, 64, 107, 0.1);
+    --color-general-bglight: rgba(35, 64, 107, 0.06);
+    --color-general-bgdark: #f3f3fb;
+
+    --color-secondary: rgba(255, 255, 255, 0.88);
+
+    --color-accent-green: #11ab0e;
+    --color-accent-red: #ef291d;
+    --color-accent-orange: #f78701;
+
+    --color-icon-primary: #23406b;
+    --color-text-primary: #23406b99;
+
+    --color-base-primary: white;
+  }
+
+  .bg-gradient-orange {
+    background: linear-gradient(143.77deg, #ff8b00 30.41%, #fd3547 128.15%);
+  }
+  .webkit-fill-transparent {
+    -webkit-text-fill-color: transparent;
+  }
+}
