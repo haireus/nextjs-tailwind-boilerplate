@@ -17,6 +17,7 @@
     --color-general-bglight: rgba(255, 255, 255, 0.06);
     --color-general-bgdark: #101c2f;
     --color-general-border: rgba(255, 255, 255, 0.1);
+    --color-general-indicator: rgba(35, 64, 107, 0.08);
 
     --color-secondary: #07111fe0; /* #07111F-[0.88]  */
 
@@ -41,6 +42,7 @@
     --color-general-border: rgba(35, 64, 107, 0.1);
     --color-general-bglight: rgba(35, 64, 107, 0.06);
     --color-general-bgdark: #f3f3fb;
+    --color-general-indicator: rgba(255, 255, 255, 0.08);
 
     --color-secondary: rgba(255, 255, 255, 0.88);
 

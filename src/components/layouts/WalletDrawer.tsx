@@ -3,6 +3,7 @@ import Image from "next/image";
 import { useTranslation } from "next-i18next";
 import React from "react";
 
+import useConnectWallet from "@/hooks/useConnectWallet";
 import coinbaseImg from "@/public/assets/images/coinbase.png";
 import glowImg from "@/public/assets/images/glowWallet.png";
 import metamaskImg from "@/public/assets/images/metamask.png";
@@ -57,6 +58,8 @@ const WALLETS = [
 export const WalletDrawer = ({ isOpen, setIsOpen }: IProps) => {
   const { t } = useTranslation("common");
 
+  const { login } = useConnectWallet();
+
   const handleClose = () => {
     setIsOpen(false);
   };
@@ -90,6 +93,7 @@ export const WalletDrawer = ({ isOpen, setIsOpen }: IProps) => {
                     true,
                   "bg-gradient-orange backdrop-blur-[20px]": wallet.isPopular,
                 })}
+                onClick={() => login("metaMask")}
               >
                 {wallet.chain}
               </button>

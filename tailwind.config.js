@@ -19,6 +19,7 @@ module.exports = {
           border: "var(--color-general-border)",
           bglight: "var(--color-general-bglight)",
           bgdark: "var(--color-general-bgdark)",
+          indicator: "var(--color-general-indicator)",
         },
         secondary: "var(--color-secondary)",
         accent: {
